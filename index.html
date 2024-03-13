@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 
@@ -108,10 +107,17 @@
         }
 @media screen and (max-width: 768px) {  
     .social {
-       text-align: center;
-       margin-top: 10px;
-    }
+        flex-direction: column;
+        align-items: center;
+           }
 }
+
+@media screen and (max-width: 768px) {  
+    .social-2 {
+        margin-top: 20px;
+           }
+}
+
 
         @media screen and (max-width: 768px) {
             .border-1 {
@@ -177,9 +183,9 @@
         
     <nav class="navbar navbar-expand-lg navbar-light gradient-2">
        
-        <div class="custom-control custom-switch">
+        <div style="margin-right: 15px;" class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="darkSwitch" title="Dark mode switch">
-            <label class="custom-control-label" for="darkSwitch" aria-label="Dark mode switch"></label>
+            <label class="custom-control-label" for="darkSwitch" aria-label="Dark mode switch">mode</label>
         </div>
         
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -215,9 +221,15 @@
     <div class="container mt-5">
         <div class="row text-right" >
             <div class="col-6 ">
-                <h1>קהילת מעקף - קוד פתוח ישראל</h1>
+                <h1>- Maakaf Community
+                   <br> קוד פתוח ישראל
+                    </h1>
                 
-                <p>מעקף היא קהילה של פיתוח תוכנה וקוד פתוח בישראל. הקהילה מתמקדת בפיתוח תוכנה וקוד פתוח בכלל ובפרוייקטים פתוחים בפרט. הקהילה מתקיימת באמצעות פגישות פיזיות ומקוונות, ומספקת פלטפורמה לשיתוף פעולה ולמידה עצמית בנושאים הקשורים לפיתוח תוכנה וקוד פתוח.</p>
+                <p class="fs-4">מטרת הקהילה היא חיבור בין מפתחים ישראלים
+                    המעוניינים לתרום לקוד פתוח, ובין ספריות קוד פתוח ישראליות.
+                    פרטים מלאים על הקהילה ניתן למצוא
+                    באתר הזמני של הקהילה
+                    </p>
             </div>
         
             <div class="col-5 mr-5 skeleton">
@@ -292,7 +304,9 @@
         </div>
     <div class="container mt-5 ">
         <h2 class="text-center">הכירו את חברי הקהילה</h2>
-        <div class="row justify-content-end mt-5 border-1">
+       
+            <div class="d-flex flex-wrap justify-content-between mt-5 border-1">
+
             <div>
                 <a href="#">
                     <img class="img-thumbnail rounded-circle" src="img/avatar.jpg" alt="Member 1">
@@ -355,7 +369,7 @@
 
 <div style="margin-top: 80px; border-radius: 10px;" class="container p-4  gradient-1">
     <div class="row justify-content-between">
-      <div class="col-6 text-right mb-2">
+      <div class="col-6  mb-2">
         <h1>אז מה עכשיו?</h1>
         <p >זה יותר פשוט ממה שנדמה. כאן תהיה עוד פסקה שמעודדת שיתוף וכניסה לקהילה, שמספרת כמה האנשים מגניבים ונחמדים וכמה לומדים הרבה מהעשייה שם. איך זה יגרום לאדם להסתכל אחרת על פיתוח ולחולל שינוי משמעותי בעולם ובחיים שלו.
         </p>
@@ -370,16 +384,16 @@
   </div>
 </div>
 </div>
-    <footer>
-       
-          
-                <div class="text-right">
+    <footer class="d-flex justify-content-evenly social">
+        
+        
+                <div >
                     <a href="#">כל הזכויות שמורות למעקף 2024</a>
                     <a  href="#">תנאי שימוש</a>
                     <a href="#">מדיניות פרטיות</a>
 
                 </div>
-                <div class="social">
+                <div class="social-2">
 <a href="#" ><i class="bi bi-twitter"></i></a>
 <a href="#" ><i class="bi bi-instagram"></i></a>
 <a href="#" ><i class="bi bi-facebook"></i></a>
