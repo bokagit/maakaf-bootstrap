@@ -81,14 +81,12 @@ body.dark-mode .bg-light , body.dark-mode td ,body.dark-mode tr , body.dark-mode
   }
   
 }
+    @media screen and (max-width: 600px) {
+      .table-container {
+        padding: 0px !important;
+      }
 
-@media screen and (max-width: 600px) {
-  .table-container{
-   padding: 0px !important;
-  }
-  
-}
-
+    }
     </style>
   </head>
   <body class="dark-mode">
@@ -218,7 +216,7 @@ body.dark-mode .bg-light , body.dark-mode td ,body.dark-mode tr , body.dark-mode
   </section>
 
   <section class="container my-5 text-center" id="mentoringSection">
-    <section class="card p-5  mb-5">
+    <section class="card p-5  mb-5 table-container">
 
     <h2>Maakaf Community Mentoring Project</h2>
     <p  class="lead">In our community, we aim to connect experienced programmers with those who are just starting their journey.</p>
