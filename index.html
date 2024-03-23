@@ -88,13 +88,41 @@ body.dark-mode .bg-light , body.dark-mode td ,body.dark-mode tr , body.dark-mode
 
     }
 
-
     @media screen and (max-width: 600px) {
-      tr {
-       width:100%!important;
-      }
+  th, td {
+    display: block;
+  }
 
-    }
+  thead {
+    display: none;
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    content: attr(data-title);
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 8px;
+    font-weight: bold;
+  }
+
+  .td-resp {
+    padding: 20px 00 !important;
+    color: #EC4899 !important; 
+    font-size: 22px !important;
+  }
+
+  tr {
+    margin-bottom: 10px;
+    display: block;
+    background-color: #fff;
+  }
+}
 
     </style>
   </head>
@@ -254,19 +282,19 @@ body.dark-mode .bg-light , body.dark-mode td ,body.dark-mode tr , body.dark-mode
         <tbody>
           <!-- Example entry -->
           <tr>
-            <td>Dan Erez</td>
+            <td class="td-resp">Dan Erez</td>
             <td>Interview preparation, system design, Java questions</td>
             <td><a href="#">Calendar link</a></td>
             <td><a href="#">LinkedIn</a></td>
           </tr>
           <tr>
-            <td>Dan Erez</td>
+            <td class="td-resp">Dan Erez</td>
             <td>Interview preparation, system design, Java questions</td>
             <td><a href="#">Calendar link</a></td>
             <td><a href="#">LinkedIn</a></td>
           </tr>
           <tr>
-            <td>Dan Erez</td>
+            <td class="td-resp">Dan Erez</td>
             <td>Interview preparation, system design, Java questions</td>
             <td><a href="#">Calendar link</a></td>
             <td><a href="#">LinkedIn</a></td>
